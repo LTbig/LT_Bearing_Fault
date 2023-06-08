@@ -1,0 +1,54 @@
+'''
+    1.加载原始轴承数据
+    '''
+    CWRU_48kHz_3hp_data = load_CWRU_48kHz_3hp_data()
+    print("CWRU_48kHz_3hp_data_length:", len(CWRU_48kHz_3hp_data))
+    # 滚动轴、驱动端、负载0hp、采样频率48khz
+    ball_inch007_DE = CWRU_48kHz_3hp_data[0].data["X124_DE_time"]
+    # print("ball_inch007_DE length:", len(ball_inch007_DE))
+    ball_inch014_DE = CWRU_48kHz_3hp_data[1].data["X191_DE_time"]
+    # print("ball_inch014_DE length:", len(ball_inch014_DE))
+    ball_inch021_DE = CWRU_48kHz_3hp_data[2].data["X228_DE_time"]
+    # print("ball_inch021_DE length:", len(ball_inch021_DE))
+    # 内圈、驱动端、负载0hp、采样频率48khz
+    inner_inch007_DE = CWRU_48kHz_3hp_data[3].data["X111_DE_time"]
+    # print("inner_inch007_DE length:", len(inner_inch007_DE))
+    inner_inch014_DE = CWRU_48kHz_3hp_data[4].data["X176_DE_time"]
+    # print("inner_inch014_DE length:", len(inner_inch014_DE))
+    inner_inch021_DE = CWRU_48kHz_3hp_data[5].data["X215_DE_time"]
+    # print("inner_inch021_DE length:", len(inner_inch021_DE))
+    # 外圈、驱动端、负载0hp、采样频率48khz
+    outer_inch007_DE = CWRU_48kHz_3hp_data[6].data["X137_DE_time"]
+    # print("outer_inch007_DE length:", len(outer_inch007_DE))
+    outer_inch014_DE = CWRU_48kHz_3hp_data[7].data["X203_DE_time"]
+    # print("outer_inch014_DE length:", len(outer_inch014_DE))
+    outer_inch021_DE = CWRU_48kHz_3hp_data[8].data["X240_DE_time"]
+    # print("outer_inch021_DE length:", len(outer_inch021_DE))
+    # 正常、驱动端、负载0hp、采样频率48khz
+    normal_DE = CWRU_48kHz_3hp_data[9].data["X099_DE_time"]
+    # print("normal_DE length:", len(normal_DE))
+
+    # 滚动轴、风扇端、负载0hp、采样频率48khz
+    ball_inch007_FE = CWRU_48kHz_3hp_data[0].data["X124_FE_time"]
+    # print("ball_inch007_FE length:", len(ball_inch007_FE))
+    ball_inch014_FE = CWRU_48kHz_3hp_data[1].data["X191_FE_time"]
+    # print("ball_inch014_FE length:", len(ball_inch014_FE))
+    ball_inch021_FE = CWRU_48kHz_3hp_data[2].data["X228_FE_time"]
+    # print("ball_inch021_FE length:", len(ball_inch021_FE))
+    # 内圈、风扇端、负载0hp、采样频率48khz
+    inner_inch007_FE = CWRU_48kHz_3hp_data[3].data["X111_FE_time"]
+    # print("inner_inch007_FE length:", len(inner_inch007_FE))
+    inner_inch014_FE = CWRU_48kHz_3hp_data[4].data["X176_FE_time"]
+    # print("inner_inch014_FE length:", len(inner_inch014_FE))
+    inner_inch021_FE = CWRU_48kHz_3hp_data[5].data["X215_FE_time"]
+    # print("inner_inch021_FE length:", len(inner_inch021_FE))
+    # 外圈、风扇端、负载0hp、采样频率48khz
+    outer_inch007_FE = CWRU_48kHz_3hp_data[6].data["X137_FE_time"]
+    # print("outer_inch007_FE length:", len(outer_inch007_FE))
+    outer_inch014_FE = CWRU_48kHz_3hp_data[7].data["X203_FE_time"]
+    # print("outer_inch014_FE length:", len(outer_inch014_FE))
+    outer_inch021_FE = CWRU_48kHz_3hp_data[8].data["X240_FE_time"]
+    # print("outer_inch021_FE length:", len(outer_inch021_FE))
+    # 正常、风扇端、负载0hp、采样频率48khz
+    normal_FE = CWRU_48kHz_3hp_data[9].data["X099_FE_time"]
+    # print("normal_FE length:", len(normal_FE))
